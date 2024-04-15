@@ -62,4 +62,19 @@ void initHashTable(hashtable* hash){
     }
     hash->size = 0;
 }
-
+int readCommands(char inputFileName[]){
+    FILE* inputFile = fopen(inputFileName, "r");
+    int numOfCommands;
+    fscanf(inputFile,"%d", &numOfCommands);
+    for( int i = 0; i < numOfCommands; ++i){
+        char* command;
+        fgets(command, MAXLEN, inputFile);
+        switch (command){
+            case "buy":
+                break;
+            case "change_price":
+                break;
+            case
+        }
+    }
+}
